@@ -1,0 +1,120 @@
+/* Header Layout */
+.header {
+    background-color: #007bff;
+ color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #cfe1ff;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  padding: 0.5rem 1.2rem;
+  
+  background-color: #2563eb;
+  color: #fff;
+  border: 2px solid ;
+  border-color: #1e3a8a;
+
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(30, 64, 175, 0.2);
+}
+
+.logout-btn:hover {
+  background-color: red;
+  border-color: #1e3a8a;
+  transform: scale(1.05);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #182d69;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(180deg);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  
+  top: 80px;
+  right: 1rem;
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop visibility */
+.logout-desktop {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+       max-width: 75%;
+      }
+  .logout-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

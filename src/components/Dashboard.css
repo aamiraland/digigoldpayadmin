@@ -1,0 +1,53 @@
+.dashboard-container {
+    padding: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;   /* Center children horizontally */
+    justify-content: center; /* Center children vertically if height allows */
+    min-height: 100vh; /* Optional: center vertically on full page */
+    text-align: center; /* Optional: center text */
+  }
+  
+  
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5rem;
+    margin-top: 1rem;
+  }
+  
+  .stat-card {
+    height: 70vh;
+    width: 95%; /* Optional: Set width if needed */
+    background: #f1f1f1;
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    border: '1px solid #ccc';
+
+  
+    /* Center contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stat-card h3 {
+    font-size: rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-card p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .clickable:hover {
+    cursor: pointer;
+    background-color: #d1e9ff;
+  }
+  

@@ -1,0 +1,118 @@
+.user-details-container {
+    padding: 2rem;
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .back-btn {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  .back-btn:hover {
+    background: #0056b3;
+  }
+  
+  .user-card {
+    background: #fefefe;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  .user-card:hover {
+    transform: scale(1.01);
+  }
+  .user-card p {
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .user-card strong {
+    color: #333;
+  }
+  .transaction-container {
+    margin-top: 2rem;
+  }
+  
+  .transaction-heading {
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 1.5rem;
+  }
+  
+  .txn-container {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+  }
+  
+  .txn-item {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  .transaction-container {
+    margin-top: 2rem;
+  }
+  
+  .transaction-heading {
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 1.5rem;
+  }
+  
+  .txn-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+  }
+  
+  .txn-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .txn-item h4 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .txn-item p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .txn-item strong {
+    color: #007bff;
+  }
+  
+  
